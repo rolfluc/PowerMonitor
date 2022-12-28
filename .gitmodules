@@ -1,0 +1,3 @@
+[submodule "PowerMonitorV2/External/SST25VF080B"]
+	path = PowerMonitorV2/External/SST25VF080B
+	url = https://github.com/rolfluc/SST25VF080B
