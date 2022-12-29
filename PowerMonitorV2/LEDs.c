@@ -19,16 +19,16 @@ void InitLEDs()
 void TurnHB(bool isOn)
 {
 	isHBON = isOn;
-	HAL_GPIO_WritePin(GPIOD, GPIO_PIN_0, GPIO_PIN_SET);
+	HAL_GPIO_WritePin(GPIOD, GPIO_PIN_0, isOn ? GPIO_PIN_SET : GPIO_PIN_RESET);
 }
 
 void ToggleHB()
 {
 	isHBON = !isHBON;
-	HAL_GPIO_WritePin(GPIOD, GPIO_PIN_0, isHBON);
+	HAL_GPIO_WritePin(GPIOD, GPIO_PIN_0, isHBON ? GPIO_PIN_SET : GPIO_PIN_RESET);
 }
 
 void TurnMode(bool isOn)
 {
-	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_15, isOn);
+	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_15, isOn ? GPIO_PIN_SET : GPIO_PIN_RESET);
 }

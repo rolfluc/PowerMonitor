@@ -57,12 +57,17 @@
   </ImportGroup>
   <ItemGroup>
     <ClCompile Include="ADC.c" />
+    <ClCompile Include="External\SST25VF080B\SST25VF080B.c" />
+    <ClCompile Include="External\SST25VF080B\SST25VF080B_test.c" />
     <ClCompile Include="LEDs.c" />
     <ClCompile Include="main.c" />
+    <ClCompile Include="SPI.c" />
     <ClCompile Include="system_STM32G0xx.c" />
     <ClCompile Include="UART.c" />
     <ClInclude Include="ADC.h" />
+    <ClInclude Include="External\SST25VF080B\SST25VF080B.h" />
     <ClInclude Include="Sizing.h" />
+    <ClInclude Include="SPI.h" />
     <ClInclude Include="UART.h" />
     <None Include="stm32.props" />
     <ClCompile Include="$(BSP_ROOT)\STM32G0xxxx\StartupFiles\startup_stm32g030xx.c" />

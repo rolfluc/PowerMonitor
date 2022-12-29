@@ -52,3 +52,9 @@ void TransferFrame(uint8_t* bytes)
 {
 	HAL_UART_Transmit(&UartPort, bytes, UART_FRAME_SIZE_bytes, 50);	
 }
+
+void FinishLine()
+{
+	char endline[2] = "\r\n";
+	HAL_UART_Transmit(&UartPort, (uint8_t*)endline, 2, 50);
+}

@@ -597,6 +597,15 @@
     <ClCompile Include="ADC.c">
       <Filter>Source files</Filter>
     </ClCompile>
+    <ClCompile Include="External\SST25VF080B\SST25VF080B.c">
+      <Filter>External</Filter>
+    </ClCompile>
+    <ClCompile Include="External\SST25VF080B\SST25VF080B_test.c">
+      <Filter>External</Filter>
+    </ClCompile>
+    <ClCompile Include="SPI.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="LEDs.h">
@@ -609,6 +618,12 @@
       <Filter>Header files</Filter>
     </ClInclude>
     <ClInclude Include="Sizing.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="External\SST25VF080B\SST25VF080B.h">
+      <Filter>External</Filter>
+    </ClInclude>
+    <ClInclude Include="SPI.h">
       <Filter>Header files</Filter>
     </ClInclude>
   </ItemGroup>
